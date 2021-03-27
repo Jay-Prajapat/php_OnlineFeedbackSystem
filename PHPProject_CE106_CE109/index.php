@@ -7,10 +7,11 @@ if(isset($_SESSION['aid']))
 }
 if(!empty($_POST))
 {
-	$aid=mysql_real_escape_string($_POST['aid']);
-	$pass=mysql_real_escape_string(md5($_POST['pass']));
-	$sql=mysql_query("select * from admin where aid='$aid' and password='$pass'");
-	if(mysql_num_rows($sql)==1)
+	$aid=($_POST['aid']);
+	$pass=($_POST['pass']);
+	$sql=("select * from admin where aid='$aid' and password='$pass' limit 1");
+	$result=mysqli_query($link,$sql);
+	if(mysqli_num_rows($result)==1)
 	{
 		$_SESSION['aid']=$_POST['aid'];
 		header("location:home.php");
@@ -26,7 +27,7 @@ if(!empty($_POST))
 }
 ?>
 <!doctype html>
-<html><!-- Designed & Developed by Ashish Labade (Tech Vegan) www.ashishvegan.com | Not for Commercial Use-->
+<html>
 <head>
 <meta charset="utf-8">
 <title>Student Feedback System</title>
@@ -62,7 +63,7 @@ if(!empty($_POST))
         	<label>Password : </label>
         </div>
         <div class="td">
-			<input type="password" name="pass" size="25" required />
+			<input type="passwor" name="pass" size="25" required />
         </div>
     </div>
 </div>
