@@ -29,36 +29,46 @@ if (isset($_POST['login'])){
 }
 ?>
 
+<style>
+    body{
+        background-image: url("image/studentlogin.jpg");
+    }
+
+    table{
+        margin-top: 140px;
+        color: navy;
+    }
+</style>
 
 <html>
     <body>
         
         <form action="studentlogin.php" method="POST">
             <table border="1" align="center" style="width: 400px;line-height:40px;" action="register.php" method="POST">
-                <tr>
+                <tr align="center">
                     <th colspan="2"> 
-                        Login
+                        <h2>Login</h2>
                     </th>
                 </tr>
-                <tr>
+                <tr align="center">
                     <td>
                          <label>Username</label>
                     </td>
                     <td>
-                        <input type="text" name="username">
+                        <input type="text" name="username" placeholder="Enter Your Username">
                     </td>
                 </tr>
                
-                <tr>
+                <tr align="center">
                     <td>
                          <label>Password</label>
                     </td>
                     <td>
-                        <input type="password" name="password1">
+                        <input type="password" name="password1" placeholder="Enter your password">
                     </td>
                 </tr>
                 
-                <tr>
+                <tr align="center">
                 <td colspan="2">
                         <button type="submit" name="login">Login</button>
                 </td>

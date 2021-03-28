@@ -29,8 +29,15 @@ if (isset($_POST['register'])){
 }
 ?>
 
-
-
+<style>
+    body{
+        background-image: url("image/register.jpg");
+    }
+    table{
+        margin-top: 140px;
+        color: aqua;
+    }
+</style>
 
 <html>
     <body>
@@ -39,42 +46,42 @@ if (isset($_POST['register'])){
             <table border="1" align="center" style="width: 400px;line-height:40px;" >
                 <tr>
                     <th colspan="2"> 
-                        Register
+                        <h1>Register</h1>
                     </th>
                 </tr>
-                <tr>
+                <tr align="center">
                     <td>
                          <label>Username</label>
                     </td>
                     <td>
-                        <input type="text" name="username">
+                        <input type="text" name="username" placeholder="Enter Username">
                     </td>
                 </tr>
-                <tr>
+                <tr align="center">
                     <td>
                          <label>Email</label>
                     </td>
                     <td>
-                        <input type="email" name="email">
+                        <input type="email" name="email" placeholder="Enter Your Email ID">
                     </td>
                 </tr>
-                <tr>
+                <tr align="center">
                     <td>
                          <label>Password</label>
                     </td>
                     <td>
-                        <input type="password" name="password1">
+                        <input type="password" name="password1" placeholder="Enter your Password">
                     </td>
                 </tr>
-                <tr>
+                <tr align="center">
                     <td>
                          <label>Conform Password</label>
                     </td>
                     <td>
-                        <input type="password" name="password2">
+                        <input type="password" name="password2" placeholder="Re-Enter Your Password">
                     </td>
                 </tr>
-                <tr>
+                <tr align="center">
                 <td colspan="2">
                         <button type="submit" name="register">Register</button>
                 </td>
@@ -84,7 +91,7 @@ if (isset($_POST['register'])){
                 
             </table>
             <h3 align="center">
-                Already a member ?<a href="studentlogin.php">sign in</a><br><br>
+                Already a member ?<a href="studentlogin.php"> sign in</a><br><br>
                 If you Admin <a href="login.php">click here</a>
 
 

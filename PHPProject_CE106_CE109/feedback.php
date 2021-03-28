@@ -18,7 +18,7 @@ $result=mysqli_query($con,$query);
 
 <style>
     body{
-        background-image: url("https://i.pinimg.com/originals/ef/7f/b1/ef7fb1b37078b6a2aef8e40710446bfa.jpg");
+        background-image: url("image/feedback.jpg");
     }
 </style>
 

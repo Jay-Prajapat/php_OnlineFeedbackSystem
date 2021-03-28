@@ -1,5 +1,3 @@
-
-
 <html>
 <head>
     <title>Admin Login</title>
@@ -9,7 +7,7 @@
 
 <style>
     body{
-        background-image: url("https://getwallpapers.com/wallpaper/full/e/c/c/854761-download-google-homepage-wallpaper-1920x1080.jpg");
+        background-image: url("image/login.jpg");
     }
     .row{
         margin-left: 400px;
@@ -43,7 +41,7 @@
 <br>
 <br>
 <center>
-<h3 style="color: red;"><a href="home.php">click here</a>for give feedback</h3>
+<h3 style="color: red;"><a href="home.php">click here</a> for give feedback</h3>
 </center>
 
 

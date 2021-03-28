@@ -2,7 +2,7 @@
 
 <style>
     body{
-        background-image: url("https://cdn.hipwallpaper.com/i/96/76/ZRXjdi.jpg");
+        background-image: url("image/home.jpg");
     }
     table{
         margin-left: 400px;
