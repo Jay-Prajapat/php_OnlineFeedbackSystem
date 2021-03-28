@@ -10,11 +10,17 @@ $result=mysqli_query($con,$query);
 
 
 <html>
-    <title>
-        <head>
-            Students feedback
-        </head>
+<head>
+    <title>        
+        Students feedback
     </title>
+</head>
+
+<style>
+    body{
+        background-image: url("https://i.pinimg.com/originals/ef/7f/b1/ef7fb1b37078b6a2aef8e40710446bfa.jpg");
+    }
+</style>
 
     <body>
         <table align="center" border="1" style="width: 800px;line-height:30px;">

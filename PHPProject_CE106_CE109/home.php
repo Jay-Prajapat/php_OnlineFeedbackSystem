@@ -1,5 +1,20 @@
 <html>
+
+<style>
+    body{
+        background-image: url("https://cdn.hipwallpaper.com/i/96/76/ZRXjdi.jpg");
+    }
+    table{
+        margin-left: 400px;
+        margin-top: 40px;
+    }
+    h1{
+        margin-left: 400px;
+    }
+</style>
+
     <body>
+        <h1 style="color:darkblue;">Feedback Form :</h1>
         <form action="input.php" method="POST">
             <table border="1">
                 <tr>
@@ -7,7 +22,7 @@
                         Student Name
                     </td>
                     <td>
-                        <input type="text" name="sname">
+                        <input type="text" name="sname" placeholder="Enter Your Name">
                     </td>
                 </tr>
                 <tr>
@@ -15,7 +30,7 @@
                         Student Id.
                     </td>
                     <td>
-                        <input type="text" name="sid">
+                        <input type="text" name="sid" placeholder="Enter Your ID">
                     </td>
                 </tr>
                 <tr>
@@ -23,7 +38,7 @@
                         Email Id.
                     </td>
                     <td>
-                        <input type="email" name="semail">
+                        <input type="email" name="semail" placeholder="Enter Your Email-Id">
                     </td>
                 </tr>
                 <tr>
@@ -32,7 +47,7 @@
                     </td>
                     <td>
                     <select name="faculty"  required autocomplete = "off">
-						<option value=""></option>
+						<!-- <option value=""></option> -->
                         <option value="NJB">NJB</option>
                         <option value="SPS">SPS</option>
                         <option value="SMM">SMM</option>
@@ -48,7 +63,7 @@
                     </td>
                     <td>
                     <select name="subject"  required autocomplete = "off">
-						<option value=""></option>
+						<!-- <option value=""></option> -->
                         <option value="JAVA">JAVA</option>
                         <option value="PHP">PHP</option>
                         <option value="DM">DM</option>
@@ -159,7 +174,8 @@
                 </tr>
                 <tr>
                     <td>
-                            <input type="submit" name="submit">
+                            <input type="submit" name="submit">&nbsp;&nbsp;&nbsp;
+                            <input type="reset" name="reset">
                     </td>
                 </tr>
             </table>
