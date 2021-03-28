@@ -1,56 +1,32 @@
-<?php
-$con = mysqli_connect('localhost','root','','feedback');
 
-if(isset($_POST['username'])){
-    
-    if(!empty($_POST['username']) && !empty($_POST['password']) ){
-        $uname = $_POST['username'];
-        $password = $_POST['password'];
-
-        $sql = "SELECT * from login where name '".$uname."'AND password='".$password."' ";
-
-        // $result = mysqli_query($con,$sql);
-        if(!mysqli_query($con,$sql)){
-            echo " You have successfully Logged in...";
-           
-        }
-        else{
-            echo " You have entered Incorrect password.";
-           
-        }
-    }
-    else{
-        echo "1";
-    }
-    
-
-    
-}
-else{
-    echo "3";
-}
-?>
 
 <html>
 <head>
+    <title>Admin Login</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </head>
 <body>
-<form method="POST">
-    <table border="1">
-    <tr>
-        <td>Username:</td>
-        <td><input type="text" name="username" id="username"></td>
-    </tr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Login Here</h2>
+            <form action="validation.php" method="POST">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="user" class="form-control" required>
 
-    <tr>
-    <td>Password:</td>
-    <td><input type="password" name="passwrod" id="password" value="password"></td>
-    </tr>
-
-    <tr>
-    <td><input type="submit" vlaue="Log in"></td>
-    </tr>
-    </table>
-    </form>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>    
+    
+    
+</div>
 </body>
 </html>
