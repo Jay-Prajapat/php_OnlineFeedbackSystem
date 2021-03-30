@@ -23,6 +23,7 @@ $result=mysqli_query($con,$query);
 </style>
 
     <body>
+    <button style="width: 100px;"><a href="login.php">Logout</a> </button>
         <table align="center" border="1" style="width: 800px;line-height:30px;">
             <tr>
                 <th colspan="13">
@@ -76,6 +77,7 @@ $result=mysqli_query($con,$query);
 
             
         </table>
+
        <h3  style="text-align: center;"><a href="list.php">click here</a> to see the register students list... </h3> 
     </body>
 </html>

@@ -23,6 +23,7 @@ $result=mysqli_query($con,$query);
 </style>
 
     <body>
+    <button style="width: 100px;"><a href="login.php">Logout</a> </button>
         <table align="center" border="1" style="width: 600px;line-height:30px;">
             <tr>
                 <th colspan="3">
