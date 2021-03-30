@@ -46,7 +46,16 @@ if(isset($_POST['sname'])){
 }
 ?>
 <html>
-    <body>
+<style>
+    body{
+        background-image: url("image/studentlogin.jpg");
+    }
+
+    table{
+        margin-top: 140px;
+        color: navy;
+    }
+</style>   <body>
     <br>
 
         <button style="width: 100px;"><a href="studentlogin.php">Logout</a> </button>
