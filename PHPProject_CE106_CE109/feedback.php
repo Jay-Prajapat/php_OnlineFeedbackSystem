@@ -76,5 +76,6 @@ $result=mysqli_query($con,$query);
 
             
         </table>
+        <a href="list.php">click here</a> to see the register students list... 
     </body>
 </html>
