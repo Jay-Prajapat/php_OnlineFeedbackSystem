@@ -42,6 +42,8 @@ if (isset($_POST['login'])){
 
 <html>
     <body>
+    <h1 style="color: green;text-align: center;">Online Feedback System</h1>
+        <hr>
         
         <form action="studentlogin.php" method="POST">
             <table border="1" align="center" style="width: 400px;line-height:40px;" action="register.php" method="POST">

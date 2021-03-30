@@ -16,6 +16,8 @@
 </style>
 
 <body>
+<h1 style="color: green;text-align: center;">Online Feedback System</h1>
+        <hr>
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -40,9 +42,7 @@
 </div>
 <br>
 <br>
-<center>
-<h3 style="color: red;"><a href="home.php">click here</a> for give feedback</h3>
-</center>
+
 
 
 </body>
