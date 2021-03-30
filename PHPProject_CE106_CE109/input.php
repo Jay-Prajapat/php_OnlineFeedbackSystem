@@ -45,3 +45,10 @@ if(isset($_POST['sname'])){
 
 }
 ?>
+<html>
+    <body>
+    <br>
+
+        <button style="width: 100px;"><a href="studentlogin.php">Logout</a> </button>
+    </body>
+</html>
